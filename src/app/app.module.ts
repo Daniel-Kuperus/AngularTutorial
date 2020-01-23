@@ -4,13 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
+import { FormsModule } from '@angular/forms'; // <-- FormsModule zorgt ervoor dat fields editable zijn.
+
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule // <-- FormsModule zorgt ervoor dat fields editable zijn.
   ],
   providers: [],
   bootstrap: [AppComponent]
