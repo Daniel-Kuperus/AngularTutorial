@@ -5,17 +5,23 @@ import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
 
 import { FormsModule } from '@angular/forms';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component'; // <-- FormsModule zorgt ervoor dat fields editable zijn.
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component'; // <-- FormsModule zorgt ervoor dat fields editable zijn.
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    MessagesComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule // <-- FormsModule zorgt ervoor dat fields editable zijn.
+    FormsModule,
+    AppRoutingModule // <-- FormsModule zorgt ervoor dat fields editable zijn.
   ],
   providers: [],
   bootstrap: [AppComponent]
